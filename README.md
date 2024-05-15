@@ -14,8 +14,8 @@
 ![Главная страница](https://github.com/axxcel/InfoPhysics/blob/main/Screens/1.jpg?raw=true)
 ## Главная страница
 </br> </br> </br>
-(https://github.com/axxcel/InfoPhysics/blob/main/Screens/2.jpg?raw=true)
+![Главная страница](https://github.com/axxcel/InfoPhysics/blob/main/Screens/2.jpg?raw=true)
 </br> </br> </br>
-(https://github.com/axxcel/InfoPhysics/blob/main/Screens/3.jpg?raw=true)
+![Главная страница](https://github.com/axxcel/InfoPhysics/blob/main/Screens/3.jpg?raw=true)
 </br> </br> </br>
-(https://github.com/axxcel/InfoPhysics/blob/main/Screens/4.jpg?raw=true)
+![Главная страница](https://github.com/axxcel/InfoPhysics/blob/main/Screens/4.jpg?raw=true)
