@@ -150,18 +150,12 @@ namespace WpfApp9
                 con.Close();
             }
         }
-
-        private void Close(object sender, RoutedEventArgs e)
-        {
-            this.Close();
-        }
-
+        private void Close(object sender, RoutedEventArgs e){this.Close();}
         private void ShowCalculate(object sender, RoutedEventArgs e)
         {
             Calculate calculate = new Calculate();
             calculate.Show();
         }
-
         private void BackClick(object sender, RoutedEventArgs e)
         {
             Back.Visibility = Visibility.Collapsed;

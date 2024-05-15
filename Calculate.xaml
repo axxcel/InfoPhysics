@@ -6,19 +6,48 @@
         xmlns:local="clr-namespace:WpfApp9"
         mc:Ignorable="d"
         Title="Calculate" Height="450" Width="800">
-    <Grid Margin="10,10,10,10">
+    <Grid Margin="10,20,10,10">
         <StackPanel>
-            <StackPanel>
-                <TextBlock>
+            <StackPanel Margin="0,0,0,60">
+                <TextBlock FontSize="23" FontFamily="Cascadia Mono Light" Margin="0,0,0,10">Конвертер физических величин</TextBlock>
+                <StackPanel HorizontalAlignment="Left" Orientation="Horizontal">
                     <StackPanel>
-                        <StackPanel>
-                            
-                        </StackPanel>
+                        <TextBlock Margin="0,0,0,5" FontSize="18">Исходная величина</TextBlock>
+                        <TextBox FontSize="16" VerticalAlignment="Top" Margin="0,0,0,5" Name="Origin1"/>
+                        <ComboBox Name="Combo" FontSize="14" Margin="0,0,0,5">
+                            <TextBlock FontSize="16">Килоампер</TextBlock>
+                            <TextBlock FontSize="16">Миллиампер</TextBlock>
+                            <TextBlock FontSize="16">Микроампер</TextBlock>
+                        </ComboBox>
                     </StackPanel>
-                </TextBlock>
+                    <Button VerticalAlignment="Center" FontSize="16" HorizontalAlignment="Center" Margin="50,0,50,0" Width="140" Height="32" FontFamily="Cascadia Mono Light" Background="#FFECECED" Click="Converting" >Преобразовать</Button>
+                    <StackPanel VerticalAlignment="Center">
+                        <TextBlock Margin="0,0,0,5" FontSize="18">Преобразованная величина</TextBlock>
+                        <TextBox Height="25" Width="80" FontSize="16" HorizontalAlignment="Left" Name="Convert1"></TextBox>
+                    </StackPanel>
+                </StackPanel>
             </StackPanel>
             <StackPanel>
-                <TextBlock></TextBlock>
+                <TextBlock FontSize="23" FontFamily="Cascadia Mono Light" Margin="0,0,0,25">Калькулятор по закону Ома</TextBlock>
+                <StackPanel Margin="0,0,0,20" Orientation="Horizontal">
+                    <StackPanel Orientation="Horizontal" Margin="0,0,48,0">
+                        <TextBlock VerticalAlignment="Center" FontSize="18" Margin="0,0,10,0">U =</TextBlock>
+                        <TextBox Height="25" Width="80" FontSize="16" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0,0,10,0" Name="ValueU" TextChanged="ValueU_TextChanged"></TextBox>
+                        <TextBlock VerticalAlignment="Center" FontSize="18" Margin="0,0,10,0">В</TextBlock>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Margin="0,0,47,0">
+                        <TextBlock VerticalAlignment="Center" FontSize="18" Margin="0,0,10,0">R =</TextBlock>
+                        <TextBox Height="25" Width="80" FontSize="16" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0,0,10,0" Name="ValueR" TextChanged="ValueR_TextChanged"></TextBox>
+                        <TextBlock VerticalAlignment="Center" FontSize="18" Margin="0,0,10,0">Ом</TextBlock>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Margin="0,0,47,0">
+                        <TextBlock VerticalAlignment="Center" FontSize="18" Margin="0,0,10,0">I =</TextBlock>
+                        <TextBox Height="25" Width="80" FontSize="16" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0,0,10,0" Name="ValueI" TextChanged="ValueI_TextChanged"></TextBox>
+                        <TextBlock VerticalAlignment="Center" FontSize="18" Margin="0,0,10,0">А</TextBlock>
+                    </StackPanel>
+                </StackPanel>
+                <TextBlock Margin="0,0,0,10" Foreground="#FFFD2D2D" FontSize="16" Name="wrong" Visibility="Hidden">Введите два значения!</TextBlock>
+                <Button  Width="120" Height="30" FontSize="16" HorizontalAlignment="Left" FontFamily="Cascadia Mono Light" Background="#FFECECED" Click="BtnCalculate">Рассчитать</Button>
             </StackPanel>
         </StackPanel>
     </Grid>
