@@ -12,7 +12,6 @@
 3. SQLite
 
 ![Главная страница](https://github.com/axxcel/InfoPhysics/blob/main/Screens/1.jpg?raw=true)
-## Главная страница
 </br> </br> </br>
 ![Главная страница](https://github.com/axxcel/InfoPhysics/blob/main/Screens/2.jpg?raw=true)
 </br> </br> </br>
