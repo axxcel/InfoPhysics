@@ -25,3 +25,4 @@
 </br> </br> </br>
 
 ![Отображение конвектора и калькулятора](https://github.com/axxcel/InfoPhysics/blob/main/Screens/4.jpg?raw=true)
+<div align="center">Отображение конвектора и калькулятора</div>
